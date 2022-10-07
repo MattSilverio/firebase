@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut Icon" href="img/todoListFavicon.png" type="image/x-icon" /> 
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <div id="app">
+        <!-- Logotipo do ToDoList -->
+        <div class="center">
+            <img src="img/todoList.png"  />
+        </div>
+        <!-- Conteúdo destinado para usuários não autenticados-->
+        <div id="auth" class="center">
+            <!-- Formulário de autenticação -->
+            <form action="" id="authForm">
+                <h3 id="authFormTitle">Accesse a sua conta para continuar</h3>
+
+                <label for="email">Email: </label>
+                <input type="email" placeholder="E-mail" id="email">
+
+                <label for="password">Senha: </label>
+                <input type="password" placeholder="Senha" id="password">
+
+                <button type="submit" id="submitAuthForm">Entrar</button>
+            </form>
+            <!-- Alternar o formulário de autenticação para o cadastro de novas contas -->
+            <p id="register">
+                Não possui uma conta?
+                <button onclick="toggleToRegister()" class="alternative">Cadastrar uma nova conta</button>
+            </p>
+             <!-- Alternar o formulário de autenticação para o acesso de contas existentes -->
+            <p id="access" class="startHidden">
+                Já possui uma conta?
+                <button onclick="toggleToAccess()" class="alternative">Acesse a sua conta</button>
+            </p>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

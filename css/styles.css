@@ -1,0 +1,62 @@
+body{
+    color: #444;
+    font-family: Tahoma;
+    display: flex;
+    height: 96vh;
+}
+
+#app{
+    width: 32rem;
+    margin: auto;
+    box-shadow: 4px 4px 20px #888;
+    padding: 1.25rem;
+    border-radius: 20px;
+}
+
+.center{
+    text-align: center;
+}
+
+.startHidden{
+    display: none;
+}
+
+h3{
+    margin: 4px;
+    font-weight: normal;
+}
+
+input{
+    width: 80%;
+    margin: 4px;
+    padding: 4px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+button{
+    background-color: rgb(13, 203, 13);
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    padding: 6px;
+    margin: 4px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+button:hover{
+    opacity: .75;
+    cursor: pointer;
+}
+
+p{
+    margin: 0;
+}
+
+.alternative{
+    background-color: rgb(109, 109, 255);
+}
